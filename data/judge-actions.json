@@ -1,0 +1,67 @@
+{
+  "judgeActions": [
+    {
+      "id": "action_001",
+      "submissionId": "sub_001",
+      "judgeUserId": "user_002",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-06T10:00:00+13:00",
+      "updatedAt": "2025-01-06T10:00:00+13:00"
+    },
+    {
+      "id": "action_002",
+      "submissionId": "sub_001",
+      "judgeUserId": "user_003",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-06T11:00:00+13:00",
+      "updatedAt": "2025-01-06T11:00:00+13:00"
+    },
+    {
+      "id": "action_003",
+      "submissionId": "sub_002",
+      "judgeUserId": "user_002",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-07T09:00:00+13:00",
+      "updatedAt": "2025-01-07T09:00:00+13:00"
+    },
+    {
+      "id": "action_004",
+      "submissionId": "sub_003",
+      "judgeUserId": "user_003",
+      "action": "pass",
+      "flagReason": null,
+      "createdAt": "2025-01-08T14:00:00+13:00",
+      "updatedAt": "2025-01-08T14:00:00+13:00"
+    },
+    {
+      "id": "action_005",
+      "submissionId": "sub_005",
+      "judgeUserId": "user_002",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-10T10:00:00+13:00",
+      "updatedAt": "2025-01-10T10:00:00+13:00"
+    },
+    {
+      "id": "action_006",
+      "submissionId": "sub_005",
+      "judgeUserId": "user_003",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-10T11:30:00+13:00",
+      "updatedAt": "2025-01-10T11:30:00+13:00"
+    },
+    {
+      "id": "action_007",
+      "submissionId": "sub_005",
+      "judgeUserId": "user_004",
+      "action": "shortlist",
+      "flagReason": null,
+      "createdAt": "2025-01-10T15:00:00+13:00",
+      "updatedAt": "2025-01-10T15:00:00+13:00"
+    }
+  ]
+}

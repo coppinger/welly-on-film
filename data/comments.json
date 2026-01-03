@@ -1,0 +1,68 @@
+{
+  "comments": [
+    {
+      "id": "comment_001",
+      "submissionId": "sub_001",
+      "userId": "user_002",
+      "body": "Beautiful light! The fern house is such a great spot in the morning.",
+      "isFlagged": false,
+      "createdAt": "2025-01-05T14:00:00+13:00"
+    },
+    {
+      "id": "comment_002",
+      "submissionId": "sub_001",
+      "userId": "user_003",
+      "body": "The warmth of Portra really works here. Lovely tones.",
+      "isFlagged": false,
+      "createdAt": "2025-01-05T16:30:00+13:00"
+    },
+    {
+      "id": "comment_003",
+      "submissionId": "sub_002",
+      "userId": "user_004",
+      "body": "Classic Wellington! I love how you've captured the mood.",
+      "isFlagged": false,
+      "createdAt": "2025-01-06T18:00:00+13:00"
+    },
+    {
+      "id": "comment_004",
+      "submissionId": "sub_005",
+      "userId": "user_001",
+      "body": "Medium format really shines in these soft evening light conditions.",
+      "isFlagged": false,
+      "createdAt": "2025-01-10T09:00:00+13:00"
+    },
+    {
+      "id": "comment_005",
+      "submissionId": "sub_006",
+      "userId": "user_002",
+      "body": "What a character! The tones on Delta 400 are perfect for this.",
+      "isFlagged": false,
+      "createdAt": "2025-01-10T15:00:00+13:00"
+    },
+    {
+      "id": "comment_006",
+      "submissionId": "sub_006",
+      "userId": "user_003",
+      "body": "Love the story behind this. 40 years at the same cafe - that's Wellington.",
+      "isFlagged": false,
+      "createdAt": "2025-01-10T17:30:00+13:00"
+    },
+    {
+      "id": "comment_007",
+      "submissionId": "sub_101",
+      "userId": "user_005",
+      "body": "Cinestill was made for shots like this. The halation around the neon is gorgeous.",
+      "isFlagged": false,
+      "createdAt": "2024-12-11T10:00:00+13:00"
+    },
+    {
+      "id": "comment_008",
+      "submissionId": "sub_101",
+      "userId": "user_002",
+      "body": "The Embassy always looks amazing at night. Great capture!",
+      "isFlagged": false,
+      "createdAt": "2024-12-12T14:00:00+13:00"
+    }
+  ]
+}

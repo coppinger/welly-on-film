@@ -1,0 +1,74 @@
+{
+  "months": [
+    {
+      "id": "month_2025_01",
+      "monthYear": "2025-01",
+      "rotatingCategory": {
+        "id": "rain",
+        "name": "Rain",
+        "description": "Capture Wellington's famous weather. The droplets, the puddles, the grey skies, the rainbows after."
+      },
+      "submissionsOpen": "2025-01-01T00:00:00+13:00",
+      "submissionsClose": "2025-01-25T23:59:59+13:00",
+      "status": "open"
+    },
+    {
+      "id": "month_2024_12",
+      "monthYear": "2024-12",
+      "rotatingCategory": {
+        "id": "night",
+        "name": "After Dark",
+        "description": "Wellington at night. City lights, late-night cafes, the quiet streets after midnight."
+      },
+      "submissionsOpen": "2024-12-01T00:00:00+13:00",
+      "submissionsClose": "2024-12-25T23:59:59+13:00",
+      "status": "closed"
+    },
+    {
+      "id": "month_2024_11",
+      "monthYear": "2024-11",
+      "rotatingCategory": {
+        "id": "coast",
+        "name": "Coastline",
+        "description": "Wellington's harbour, beaches, and rugged southern coast. Where the city meets the sea."
+      },
+      "submissionsOpen": "2024-11-01T00:00:00+13:00",
+      "submissionsClose": "2024-11-25T23:59:59+13:00",
+      "status": "closed"
+    }
+  ],
+  "rotatingThemes": [
+    {
+      "id": "rain",
+      "name": "Rain",
+      "description": "Capture Wellington's famous weather."
+    },
+    {
+      "id": "night",
+      "name": "After Dark",
+      "description": "Wellington at night."
+    },
+    {
+      "id": "coast",
+      "name": "Coastline",
+      "description": "Where the city meets the sea."
+    },
+    {
+      "id": "transit",
+      "name": "Transit",
+      "description": "Buses, cable cars, ferries, and trains."
+    },
+    {
+      "id": "faces",
+      "name": "Faces of Wellington",
+      "description": "Portraits of Wellingtonians."
+    },
+    {
+      "id": "salad",
+      "name": "Salad",
+      "description": "Fresh, colorful, unexpected. Sponsored by Dilly Dally.",
+      "sponsorName": "Dilly Dally",
+      "sponsorUrl": "https://dillydally.co.nz"
+    }
+  ]
+}

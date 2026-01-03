@@ -1,0 +1,235 @@
+{
+  "submissions": [
+    {
+      "id": "sub_001",
+      "userId": "user_001",
+      "photoUrl": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400",
+      "categoryType": "fixed",
+      "category": "nature",
+      "metadata": {
+        "camera": "Canon AE-1",
+        "filmStock": "Kodak Portra 400",
+        "location": "Botanic Gardens",
+        "description": "Morning light through the fern house. The humidity made for some interesting lens effects.",
+        "tags": ["botanical", "light", "morning"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-05T10:30:00+13:00"
+    },
+    {
+      "id": "sub_002",
+      "userId": "user_001",
+      "photoUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400",
+      "categoryType": "rotating",
+      "category": "rain",
+      "metadata": {
+        "camera": "Canon AE-1",
+        "filmStock": "Kodak Tri-X 400",
+        "location": "Cuba Street",
+        "description": "That classic Wellington sideways rain. Shot from the bus shelter.",
+        "tags": ["rain", "street", "weather"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-06T14:15:00+13:00"
+    },
+    {
+      "id": "sub_003",
+      "userId": "user_002",
+      "photoUrl": "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?w=400",
+      "categoryType": "fixed",
+      "category": "architecture",
+      "metadata": {
+        "camera": "Pentax K1000",
+        "filmStock": "Ilford HP5+",
+        "location": "Civic Square",
+        "description": "The library building always photographs well in harsh midday light.",
+        "tags": ["architecture", "library", "civic"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-07T11:00:00+13:00"
+    },
+    {
+      "id": "sub_004",
+      "userId": "user_003",
+      "photoUrl": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400",
+      "categoryType": "open",
+      "category": null,
+      "metadata": {
+        "camera": "Olympus OM-1",
+        "filmStock": "Fuji Superia 400",
+        "location": "Red Rocks",
+        "description": "Hiked out at sunset. The seals were there but too far to photograph.",
+        "tags": ["sunset", "landscape", "coast"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-08T09:45:00+13:00"
+    },
+    {
+      "id": "sub_005",
+      "userId": "user_004",
+      "photoUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
+      "categoryType": "fixed",
+      "category": "love",
+      "metadata": {
+        "camera": "Hasselblad 500C/M",
+        "filmStock": "Kodak Portra 160",
+        "location": "Oriental Bay",
+        "description": "Couple watching the sunset. They didn't notice me.",
+        "tags": ["couple", "sunset", "candid"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-09T18:30:00+13:00"
+    },
+    {
+      "id": "sub_006",
+      "userId": "user_005",
+      "photoUrl": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=400",
+      "categoryType": "fixed",
+      "category": "human",
+      "metadata": {
+        "camera": "Nikon FM2",
+        "filmStock": "Ilford Delta 400",
+        "location": "Aro Valley",
+        "description": "Street portrait. He told me he's been coming to this cafe for 40 years.",
+        "tags": ["portrait", "street", "character"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-10T12:00:00+13:00"
+    },
+    {
+      "id": "sub_007",
+      "userId": "user_003",
+      "photoUrl": "https://images.unsplash.com/photo-1549490349-8643362247b5?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1549490349-8643362247b5?w=400",
+      "categoryType": "rotating",
+      "category": "rain",
+      "metadata": {
+        "camera": "Olympus OM-1",
+        "filmStock": "Kodak Gold 200",
+        "location": "Lambton Quay",
+        "description": "Reflections on wet pavement after the rain stopped.",
+        "tags": ["rain", "reflection", "street"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-11T16:20:00+13:00"
+    },
+    {
+      "id": "sub_008",
+      "userId": "user_001",
+      "photoUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400",
+      "categoryType": "fixed",
+      "category": "art",
+      "metadata": {
+        "camera": "Canon AE-1",
+        "filmStock": "Cinestill 800T",
+        "location": "Cuba Street",
+        "description": "New mural on the abandoned building. Love the colors at night.",
+        "tags": ["mural", "art", "street"]
+      },
+      "monthYear": "2025-01",
+      "isFeatured": false,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2025-01-12T21:00:00+13:00"
+    },
+    {
+      "id": "sub_101",
+      "userId": "user_001",
+      "photoUrl": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=400",
+      "categoryType": "rotating",
+      "category": "night",
+      "metadata": {
+        "camera": "Canon AE-1",
+        "filmStock": "Cinestill 800T",
+        "location": "Courtenay Place",
+        "description": "The neon lights of the Embassy Theatre.",
+        "tags": ["night", "neon", "cinema"]
+      },
+      "monthYear": "2024-12",
+      "isFeatured": true,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2024-12-10T22:00:00+13:00"
+    },
+    {
+      "id": "sub_102",
+      "userId": "user_002",
+      "photoUrl": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400",
+      "categoryType": "fixed",
+      "category": "architecture",
+      "metadata": {
+        "camera": "Pentax K1000",
+        "filmStock": "Ilford HP5+",
+        "location": "Thorndon",
+        "description": "The old railway station lit by street lamps.",
+        "tags": ["architecture", "heritage", "night"]
+      },
+      "monthYear": "2024-12",
+      "isFeatured": true,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2024-12-12T20:30:00+13:00"
+    },
+    {
+      "id": "sub_103",
+      "userId": "user_003",
+      "photoUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400",
+      "categoryType": "open",
+      "category": null,
+      "metadata": {
+        "camera": "Olympus OM-1",
+        "filmStock": "Kodak Ektar 100",
+        "location": "Mount Victoria",
+        "description": "Last light from the lookout.",
+        "tags": ["landscape", "sunset", "view"]
+      },
+      "monthYear": "2024-12",
+      "isFeatured": true,
+      "isRemoved": false,
+      "editedAt": null,
+      "deletedAt": null,
+      "createdAt": "2024-12-15T19:00:00+13:00"
+    }
+  ]
+}

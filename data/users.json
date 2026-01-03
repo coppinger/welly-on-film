@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "email": "sarah@example.com",
+      "displayName": "Sarah Chen",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+      "bio": "Wellington-based photographer. Shooting mostly on Kodak Portra.",
+      "role": "photographer",
+      "createdAt": "2024-06-15T10:00:00+12:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_002",
+      "email": "marcus@example.com",
+      "displayName": "Marcus Webb",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+      "bio": "Film enthusiast and darkroom printer. Love the slow process.",
+      "role": "photographer",
+      "createdAt": "2024-07-01T14:30:00+12:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_003",
+      "email": "aroha@example.com",
+      "displayName": "Aroha Ngata",
+      "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+      "bio": "Capturing Aotearoa on 35mm. Mostly street and nature.",
+      "role": "photographer",
+      "createdAt": "2024-08-20T09:15:00+12:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_004",
+      "email": "james@example.com",
+      "displayName": "James Liu",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+      "bio": "Architecture and urban landscapes. Shooting on medium format.",
+      "role": "photographer",
+      "createdAt": "2024-09-10T11:00:00+12:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_005",
+      "email": "emma@example.com",
+      "displayName": "Emma Wilson",
+      "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+      "bio": "Portrait photographer. Black and white film lover.",
+      "role": "photographer",
+      "createdAt": "2024-10-05T16:45:00+13:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_006",
+      "email": "admin@wellyonfilm.nz",
+      "displayName": "Admin",
+      "avatarUrl": null,
+      "bio": null,
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00+13:00",
+      "deletedAt": null
+    },
+    {
+      "id": "user_deleted",
+      "email": "deleted@example.com",
+      "displayName": "Deleted User",
+      "avatarUrl": null,
+      "bio": null,
+      "role": "photographer",
+      "createdAt": "2024-05-01T00:00:00+12:00",
+      "deletedAt": "2024-12-01T00:00:00+13:00"
+    }
+  ],
+  "judgeAssignments": [
+    {
+      "id": "judge_001",
+      "userId": "user_002",
+      "monthYear": "2025-01",
+      "createdAt": "2024-12-20T00:00:00+13:00"
+    },
+    {
+      "id": "judge_002",
+      "userId": "user_003",
+      "monthYear": "2025-01",
+      "createdAt": "2024-12-20T00:00:00+13:00"
+    },
+    {
+      "id": "judge_003",
+      "userId": "user_004",
+      "monthYear": "2025-01",
+      "createdAt": "2024-12-20T00:00:00+13:00"
+    }
+  ],
+  "raffleWinners": [
+    {
+      "id": "raffle_001",
+      "userId": "user_001",
+      "monthYear": "2024-12",
+      "createdAt": "2025-01-02T00:00:00+13:00"
+    }
+  ]
+}
