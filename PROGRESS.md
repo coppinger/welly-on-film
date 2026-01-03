@@ -18,7 +18,7 @@ Building a community-driven analogue film photography platform for Wellington, N
 - Layout components (header, footer, navigation)
 - Mock auth context
 
-### Stage 2: Public Pages (Current)
+### Stage 2: Public Pages ✅
 - Home page with hero and deadline countdown
 - This Month (Brief + Submissions gallery)
 - Photo detail pages
@@ -26,7 +26,7 @@ Building a community-driven analogue film photography platform for Wellington, N
 - About page with FAQ
 - Legal pages (Privacy, Terms)
 
-### Stage 3: Auth & Protected Pages
+### Stage 3: Auth & Protected Pages (Current)
 - Sign in/up pages (mocked magic link flow)
 - Submit flow (upload, category selection, metadata)
 - Profile page (user dashboard, settings)
@@ -59,18 +59,17 @@ Building a community-driven analogue film photography platform for Wellington, N
 - [x] Create mock auth context
 - [x] Update root layout with providers
 
-### Stage 2: Public Pages
-- [x] Home page (placeholder)
-- [ ] Home page (full implementation with countdown)
-- [ ] Gallery components (photo grid, photo card)
-- [ ] This Month - Brief page
-- [ ] This Month - Submissions gallery
-- [ ] Photo detail page
-- [ ] Archive index
-- [ ] Archive month detail
-- [ ] About page
-- [ ] Privacy Policy page
-- [ ] Terms of Use page
+### Stage 2: Public Pages ✅
+- [x] Home page with countdown and gallery preview
+- [x] Gallery components (PhotoGrid, PhotoCard, CategoryFilter)
+- [x] This Month - Brief page
+- [x] This Month - Submissions gallery
+- [x] Photo detail page
+- [x] Archive index
+- [x] Archive month detail
+- [x] About page
+- [x] Privacy Policy page
+- [x] Terms of Use page
 
 ### Stage 3: Auth & Protected
 - [ ] Sign in page
@@ -94,18 +93,17 @@ Building a community-driven analogue film photography platform for Wellington, N
 
 ## Progress
 
-**Current Stage:** 2 - Public Pages
-**Overall Progress:** 15%
+**Current Stage:** 3 - Auth & Protected Pages
+**Overall Progress:** 40%
 
 ---
 
 ## Next Actions
 
-1. Create gallery components (photo grid, photo card)
-2. Implement full home page with deadline countdown
-3. Create This Month - Brief page
-4. Create This Month - Submissions gallery page
-5. Create Photo detail page
+1. Create sign-in page with magic link form
+2. Create sign-up page
+3. Create submit page with upload flow
+4. Create profile page with user dashboard
 
 ---
 
@@ -113,19 +111,27 @@ Building a community-driven analogue film photography platform for Wellington, N
 
 ### Session 1
 - Created project plan
-- Created PROGRESS.md
 - Completed Stage 1: Foundation & Infrastructure
   - lib/constants.ts with site config and limits
   - TypeScript types for all data models
-  - Mock JSON data files for users, submissions, months, comments, judges
+  - Mock JSON data files
   - Data access utilities
   - ShadCN UI components installed
   - Site header with responsive navigation
   - Site footer
   - Mock auth context with role switching
   - Updated root layout
-  - Placeholder home page
-- Committed foundation work
+- Completed Stage 2: Public Pages
+  - Home page with countdown and gallery preview
+  - Gallery components (PhotoGrid, PhotoCard, CategoryFilter)
+  - Countdown timer hook and display component
+  - This Month - Brief page with categories and guidelines
+  - This Month - Submissions gallery with filtering
+  - Photo detail page with metadata, comments, "more from user"
+  - Archive index and month detail pages
+  - About page with principles, how it works, FAQ
+  - Legal pages (Privacy Policy, Terms of Use)
+- Two commits completed
 
 ---
 
