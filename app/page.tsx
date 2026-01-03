@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Camera, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/constants";
+import { getCurrentMonth, getMonthWithStats } from "@/lib/data/months";
+import { getSubmissionCards } from "@/lib/data/submissions";
+import { PhotoGrid } from "@/components/gallery";
+import { CurrentMonthCard } from "@/components/home";
 
 export default function Home() {
+  // Get current month data
+  const currentMonth = getCurrentMonth();
+  const monthStats = currentMonth ? getMonthWithStats(currentMonth.monthYear) : null;
+
+  // Get recent submissions for the gallery preview
+  const submissions = currentMonth
+    ? getSubmissionCards(currentMonth.monthYear).slice(0, 8)
+    : [];
+
   return (
     <div className="container py-12 md:py-24">
       {/* Hero Section */}
@@ -37,38 +50,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Placeholder for current month info */}
-      <section className="border rounded-lg p-8 text-center bg-muted/30">
-        <h2 className="text-2xl font-semibold mb-4">This Month: January 2025</h2>
-        <p className="text-muted-foreground mb-4">
-          Rotating theme: <strong>Rain</strong> — Capture Wellington&apos;s famous
-          weather
-        </p>
-        <p className="text-sm text-muted-foreground">
-          Submissions close January 25th
-        </p>
-        <Button asChild className="mt-6">
-          <Link href="/this-month/brief">View The Brief</Link>
-        </Button>
+      {/* Current Month Card */}
+      {currentMonth && (
+        <section className="max-w-2xl mx-auto mb-16">
+          <CurrentMonthCard
+            month={currentMonth}
+            submissionCount={monthStats?.submissionCount}
+          />
+        </section>
+      )}
+
+      {/* Recent Submissions Gallery */}
+      <section className="mt-16">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-semibold">Recent Submissions</h2>
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/this-month/submissions">
+              View All
+              <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+
+        {submissions.length > 0 ? (
+          <PhotoGrid submissions={submissions} priorityCount={4} />
+        ) : (
+          <div className="text-center py-12 border rounded-lg bg-muted/30">
+            <p className="text-muted-foreground mb-4">
+              No submissions yet this month. Be the first!
+            </p>
+            <Button asChild>
+              <Link href="/submit">Submit a Photo</Link>
+            </Button>
+          </div>
+        )}
       </section>
 
-      {/* Placeholder for gallery preview */}
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          Recent Submissions
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {/* Placeholder cards */}
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div
-              key={i}
-              className="aspect-square bg-muted rounded-lg animate-pulse"
-            />
-          ))}
-        </div>
-        <div className="text-center mt-8">
+      {/* Archive Preview */}
+      <section className="mt-16 pt-16 border-t">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold mb-4">Explore the Archive</h2>
+          <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+            Browse through months of stunning film photography from the Wellington community.
+          </p>
           <Button asChild variant="outline">
-            <Link href="/this-month/submissions">View All Submissions</Link>
+            <Link href="/archive">View Archive</Link>
           </Button>
         </div>
       </section>
