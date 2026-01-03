@@ -26,12 +26,12 @@ Building a community-driven analogue film photography platform for Wellington, N
 - About page with FAQ
 - Legal pages (Privacy, Terms)
 
-### Stage 3: Auth & Protected Pages (Current)
+### Stage 3: Auth & Protected Pages ✅
 - Sign in/up pages (mocked magic link flow)
 - Submit flow (upload, category selection, metadata)
 - Profile page (user dashboard, settings)
 
-### Stage 4: Admin & Judge Pages
+### Stage 4: Admin & Judge Pages (Current)
 - Judging interface
 - Moderation queue
 - Raffle picker
@@ -71,11 +71,11 @@ Building a community-driven analogue film photography platform for Wellington, N
 - [x] Privacy Policy page
 - [x] Terms of Use page
 
-### Stage 3: Auth & Protected
-- [ ] Sign in page
-- [ ] Sign up page
-- [ ] Submit page
-- [ ] Profile page
+### Stage 3: Auth & Protected ✅
+- [x] Sign in page
+- [x] Sign up page
+- [x] Submit page
+- [x] Profile page
 
 ### Stage 4: Admin
 - [ ] Judging interface
@@ -93,17 +93,17 @@ Building a community-driven analogue film photography platform for Wellington, N
 
 ## Progress
 
-**Current Stage:** 3 - Auth & Protected Pages
-**Overall Progress:** 40%
+**Current Stage:** 4 - Admin & Judge Pages
+**Overall Progress:** 60%
 
 ---
 
 ## Next Actions
 
-1. Create sign-in page with magic link form
-2. Create sign-up page
-3. Create submit page with upload flow
-4. Create profile page with user dashboard
+1. Create judging interface for community judges
+2. Create moderation queue for admins
+3. Create raffle picker for selecting winners
+4. Create monthly settings management page
 
 ---
 
@@ -132,6 +132,13 @@ Building a community-driven analogue film photography platform for Wellington, N
   - About page with principles, how it works, FAQ
   - Legal pages (Privacy Policy, Terms of Use)
 - Two commits completed
+
+### Session 2
+- Completed Stage 3: Auth & Protected Pages
+  - Sign-in page with magic link flow and email validation
+  - Sign-up page with display name, email, and terms acceptance
+  - Submit page with multi-step form (upload, category, metadata, review)
+  - Profile page with submissions gallery and account settings
 
 ---
 
