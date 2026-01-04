@@ -1,15 +1,15 @@
 {
   "months": [
     {
-      "id": "month_2025_01",
-      "monthYear": "2025-01",
+      "id": "month_2026_01",
+      "monthYear": "2026-01",
       "rotatingCategory": {
         "id": "rain",
         "name": "Rain",
         "description": "Capture Wellington's famous weather. The droplets, the puddles, the grey skies, the rainbows after."
       },
-      "submissionsOpen": "2025-01-01T00:00:00+13:00",
-      "submissionsClose": "2025-01-25T23:59:59+13:00",
+      "submissionsOpen": "2026-01-01T00:00:00+13:00",
+      "submissionsClose": "2026-01-25T23:59:59+13:00",
       "status": "open"
     },
     {

@@ -114,35 +114,37 @@ export function SiteHeader() {
           )}
         </div>
 
-        {/* Dev Role Switcher */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="sm" className="gap-2">
-              <Bug className="h-4 w-4" />
-              <span className="hidden sm:inline">Dev</span>
-              <Badge variant="secondary" className="text-xs">
-                {user?.role || "guest"}
-              </Badge>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Switch Role</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            {availableRoles.map((role) => (
-              <DropdownMenuItem
-                key={role}
-                onClick={() => switchUser(role)}
-                className={cn(
-                  "capitalize",
-                  (user?.role || "guest") === role && "bg-accent"
-                )}
-              >
-                {role}
-                {(user?.role || "guest") === role && " (current)"}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
+        {/* Dev Role Switcher - only show in development */}
+        {process.env.NODE_ENV === 'development' && (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="sm" className="gap-2">
+                <Bug className="h-4 w-4" />
+                <span className="hidden sm:inline">Dev</span>
+                <Badge variant="secondary" className="text-xs">
+                  {user?.role || "guest"}
+                </Badge>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuLabel>Switch Role</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {availableRoles.map((role) => (
+                <DropdownMenuItem
+                  key={role}
+                  onClick={() => switchUser(role)}
+                  className={cn(
+                    "capitalize",
+                    (user?.role || "guest") === role && "bg-accent"
+                  )}
+                >
+                  {role}
+                  {(user?.role || "guest") === role && " (current)"}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        )}
 
         {/* Mobile Navigation */}
         <Sheet>

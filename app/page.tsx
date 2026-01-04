@@ -1,12 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
-import { Camera, ArrowRight } from "lucide-react";
+import { Camera, ArrowRight, Calendar, ImageIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { SITE_CONFIG } from "@/lib/constants";
-import { getCurrentMonth, getMonthWithStats } from "@/lib/data/months";
+import { getCurrentMonth, getMonthWithStats, getArchivedMonths } from "@/lib/data/months";
 import { getSubmissionCards } from "@/lib/data/submissions";
 import { PhotoGrid } from "@/components/gallery";
-import { CurrentMonthCard } from "@/components/home";
+import { CurrentMonthCard, HeroBackground, HowItWorksPreview, CommunityStats } from "@/components/home";
 
 export const metadata: Metadata = {
   title: `${SITE_CONFIG.name} - ${SITE_CONFIG.description}`,
@@ -34,22 +37,26 @@ export default function Home() {
     ? getSubmissionCards(currentMonth.monthYear).slice(0, 8)
     : [];
 
+  // Get recent archived months for the archive preview
+  const archivedMonths = getArchivedMonths().slice(0, 4);
+
   return (
     <div className="container py-12 md:py-24">
       {/* Hero Section */}
-      <section className="flex flex-col items-center text-center gap-8 mb-16">
-        <div className="flex items-center gap-3 text-muted-foreground">
+      <section className="relative flex flex-col items-center text-center gap-8 mb-16 -mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8 py-16 md:py-24">
+        <HeroBackground />
+        <div className="flex items-center gap-3 text-white/80">
           <Camera className="h-8 w-8" />
           <span className="text-sm font-medium uppercase tracking-wider">
             {SITE_CONFIG.location}
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl text-white drop-shadow-lg">
           {SITE_CONFIG.name}
         </h1>
 
-        <p className="text-xl text-muted-foreground max-w-2xl">
+        <p className="text-xl text-white/90 max-w-2xl drop-shadow-md">
           {SITE_CONFIG.tagline}. A community platform for local film
           photographers to share their work, connect, and grow.
         </p>
@@ -61,15 +68,18 @@ export default function Home() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg">
+          <Button asChild variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
             <Link href="/about">How It Works</Link>
           </Button>
         </div>
       </section>
 
+      {/* How It Works Preview */}
+      <HowItWorksPreview />
+
       {/* Current Month Card */}
       {currentMonth && (
-        <section className="max-w-2xl mx-auto mb-16">
+        <section className="max-w-2xl mx-auto mb-16 mt-12">
           <CurrentMonthCard
             month={currentMonth}
             submissionCount={monthStats?.submissionCount}
@@ -103,17 +113,67 @@ export default function Home() {
         )}
       </section>
 
+      {/* Community Stats */}
+      <CommunityStats />
+
       {/* Archive Preview */}
       <section className="mt-16 pt-16 border-t">
-        <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-4">Explore the Archive</h2>
-          <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-            Browse through months of stunning film photography from the Wellington community.
-          </p>
-          <Button asChild variant="outline">
-            <Link href="/archive">View Archive</Link>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-semibold">Explore the Archive</h2>
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/archive">
+              View All
+              <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
           </Button>
         </div>
+        <p className="text-muted-foreground mb-8">
+          Browse through months of stunning film photography from the Wellington community.
+        </p>
+
+        {archivedMonths.length > 0 ? (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {archivedMonths.map((month) => (
+              <Link key={month.id} href={`/archive/${month.monthYear}`}>
+                <Card className="overflow-hidden h-full hover:border-foreground/20 transition-colors">
+                  <div className="relative aspect-[4/3] bg-muted">
+                    {month.coverImageUrl ? (
+                      <Image
+                        src={month.coverImageUrl}
+                        alt={month.displayName}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <ImageIcon className="h-8 w-8 text-muted-foreground/50" />
+                      </div>
+                    )}
+                  </div>
+                  <CardHeader className="p-3 pb-2">
+                    <div className="flex items-center gap-1.5 text-muted-foreground mb-1">
+                      <Calendar className="h-3 w-3" />
+                      <span className="text-xs">{month.displayName}</span>
+                    </div>
+                    <CardTitle className="text-sm">{month.rotatingCategoryName}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-3 pt-0">
+                    <Badge variant="secondary" className="text-xs">
+                      {month.submissionCount} photos
+                    </Badge>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-8">
+            <p className="text-muted-foreground">
+              No archived months yet. Check back after the first month concludes!
+            </p>
+          </div>
+        )}
       </section>
     </div>
   );

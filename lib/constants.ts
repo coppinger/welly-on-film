@@ -141,3 +141,8 @@ export const UNSPLASH_CONFIG = {
 
 // Timezone (Wellington)
 export const TIMEZONE = "Pacific/Auckland" as const;
+
+// Social media links
+export const SOCIAL_LINKS = {
+  instagram: "https://instagram.com/wellyonfilm",
+} as const;

@@ -63,6 +63,13 @@ export function PhotoCard({
         </div>
       )}
 
+      {/* Persistent photographer attribution */}
+      {showUser && (
+        <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded truncate max-w-[calc(100%-1rem)] transition-opacity duration-300 group-hover:opacity-0">
+          {submission.user.displayName}
+        </div>
+      )}
+
       {/* Bottom info - visible on hover */}
       <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full transition-transform duration-300 group-hover:translate-y-0">
         <div className="flex items-center justify-between gap-2">

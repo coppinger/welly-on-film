@@ -3,6 +3,7 @@ import { ArrowRight, Calendar, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { CountdownDisplay } from "./countdown-display";
 import { formatMonthYear } from "@/lib/data/months";
 import type { Month } from "@/types";
@@ -54,9 +55,36 @@ export function CurrentMonthCard({ month, submissionCount = 0 }: CurrentMonthCar
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">Categories this month:</p>
           <div className="flex flex-wrap gap-2">
-            <Badge variant="outline">{CATEGORY_TYPES.fixed.name}</Badge>
-            <Badge variant="outline">{month.rotatingCategory.name}</Badge>
-            <Badge variant="outline">{CATEGORY_TYPES.open.name}</Badge>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Badge variant="outline" className="cursor-help">
+                  {CATEGORY_TYPES.fixed.name}
+                </Badge>
+              </TooltipTrigger>
+              <TooltipContent>
+                5 permanent categories (Love, Nature, Human, Art, Architecture) - 1 featured photo each
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Badge variant="outline" className="cursor-help">
+                  {month.rotatingCategory.name}
+                </Badge>
+              </TooltipTrigger>
+              <TooltipContent>
+                This month&apos;s theme - 5 featured photos selected
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Badge variant="outline" className="cursor-help">
+                  {CATEGORY_TYPES.open.name}
+                </Badge>
+              </TooltipTrigger>
+              <TooltipContent>
+                Anything goes - your creative choice - 5 featured photos
+              </TooltipContent>
+            </Tooltip>
           </div>
         </div>
 
