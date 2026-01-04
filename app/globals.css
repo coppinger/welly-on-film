@@ -135,6 +135,8 @@
 
   @media (min-width: 640px) {
     .container {
+      margin-left: auto;
+    margin-right: auto;
       max-width: 640px;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
@@ -143,12 +145,16 @@
 
   @media (min-width: 768px) {
     .container {
+      margin-left: auto;
+    margin-right: auto;
       max-width: 768px;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
+      margin-left: auto;
+    margin-right: auto;
       max-width: 1024px;
       padding-left: 2rem;
       padding-right: 2rem;
@@ -157,6 +163,8 @@
 
   @media (min-width: 1280px) {
     .container {
+      margin-left: auto;
+    margin-right: auto;
       max-width: 1280px;
     }
   }
