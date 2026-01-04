@@ -44,7 +44,11 @@ export default function RootLayout({
       >
         <AuthProvider>
           <SiteHeader />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 justify-center items-center mx-auto w-full">
+            <div className="mx-auto">
+              {children}
+            </div>
+            </main>
           <SiteFooter />
           <Toaster />
         </AuthProvider>

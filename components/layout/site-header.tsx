@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Camera, User } from "lucide-react";
+import { Menu, Camera, User, Bug } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import {
   Sheet,
   SheetContent,
@@ -19,12 +20,13 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/context/auth-context";
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const { user, isAuthenticated, signOut } = useAuth();
+  const { user, isAuthenticated, signOut, switchUser, availableRoles } = useAuth();
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -111,6 +113,36 @@ export function SiteHeader() {
             </>
           )}
         </div>
+
+        {/* Dev Role Switcher */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm" className="gap-2">
+              <Bug className="h-4 w-4" />
+              <span className="hidden sm:inline">Dev</span>
+              <Badge variant="secondary" className="text-xs">
+                {user?.role || "guest"}
+              </Badge>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuLabel>Switch Role</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            {availableRoles.map((role) => (
+              <DropdownMenuItem
+                key={role}
+                onClick={() => switchUser(role)}
+                className={cn(
+                  "capitalize",
+                  (user?.role || "guest") === role && "bg-accent"
+                )}
+              >
+                {role}
+                {(user?.role || "guest") === role && " (current)"}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
 
         {/* Mobile Navigation */}
         <Sheet>

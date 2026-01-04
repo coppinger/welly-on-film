@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Camera, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -6,6 +7,22 @@ import { getCurrentMonth, getMonthWithStats } from "@/lib/data/months";
 import { getSubmissionCards } from "@/lib/data/submissions";
 import { PhotoGrid } from "@/components/gallery";
 import { CurrentMonthCard } from "@/components/home";
+
+export const metadata: Metadata = {
+  title: `${SITE_CONFIG.name} - ${SITE_CONFIG.description}`,
+  description: `${SITE_CONFIG.tagline}. A community platform for local film photographers to share their work, connect, and grow.`,
+  openGraph: {
+    title: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+    type: "website",
+    locale: "en_NZ",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+  },
+};
 
 export default function Home() {
   // Get current month data
