@@ -31,13 +31,13 @@ Building a community-driven analogue film photography platform for Wellington, N
 - Submit flow (upload, category selection, metadata)
 - Profile page (user dashboard, settings)
 
-### Stage 4: Admin & Judge Pages (Current)
+### Stage 4: Admin & Judge Pages ✅
 - Judging interface
 - Moderation queue
 - Raffle picker
 - Monthly settings
 
-### Stage 5: Polish & Refinement
+### Stage 5: Polish & Refinement (Current)
 - Responsive testing and fixes
 - Loading states and error boundaries
 - SEO and metadata
@@ -77,11 +77,11 @@ Building a community-driven analogue film photography platform for Wellington, N
 - [x] Submit page
 - [x] Profile page
 
-### Stage 4: Admin
-- [ ] Judging interface
-- [ ] Moderation queue
-- [ ] Raffle picker
-- [ ] Monthly settings
+### Stage 4: Admin ✅
+- [x] Judging interface
+- [x] Moderation queue
+- [x] Raffle picker
+- [x] Monthly settings
 
 ### Stage 5: Polish
 - [ ] Responsive fixes
@@ -93,17 +93,17 @@ Building a community-driven analogue film photography platform for Wellington, N
 
 ## Progress
 
-**Current Stage:** 4 - Admin & Judge Pages
-**Overall Progress:** 60%
+**Current Stage:** 5 - Polish & Refinement
+**Overall Progress:** 80%
 
 ---
 
 ## Next Actions
 
-1. Create judging interface for community judges
-2. Create moderation queue for admins
-3. Create raffle picker for selecting winners
-4. Create monthly settings management page
+1. Responsive testing and fixes
+2. Add loading states and error boundaries
+3. Enhance SEO metadata
+4. Final documentation
 
 ---
 
@@ -139,6 +139,11 @@ Building a community-driven analogue film photography platform for Wellington, N
   - Sign-up page with display name, email, and terms acceptance
   - Submit page with multi-step form (upload, category, metadata, review)
   - Profile page with submissions gallery and account settings
+- Completed Stage 4: Admin & Judge Pages
+  - Judging interface with grid/focus views, filtering, shortlist/pass/flag actions
+  - Moderation queue for reviewing flagged submissions
+  - Raffle picker with animated spinner and participant list
+  - Monthly settings page for theme, judges, and status management
 
 ---
 
